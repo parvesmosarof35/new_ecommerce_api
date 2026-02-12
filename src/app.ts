@@ -105,7 +105,7 @@ cron.schedule("*/30 * * * *", async () => {
 app.get("/", (_req, res) => {
   res.send({
     status: true,
-    message: "Welcome to ecommerce of raphm18 ",
+    message: "Welcome to ecommerce api",
   });
 });
 

@@ -4,6 +4,10 @@ A robust and scalable TypeScript-based backend for e-commerce applications, buil
 https://ecommarce-backend-dsoe.onrender.com/
 (live)
 
+
+https://drive.google.com/file/d/1fjpdimzKwtbRu8H7dI4WK5D0BchM3NLx/view?usp=sharing
+
+
 ## 🚀 Features
 
 - **User Authentication** - JWT-based authentication system
@@ -76,11 +80,6 @@ npm run dev
 
 
 
-
-#  PS C:\New folder\spark-tech\ecommarce-raphm18\ecommarce-backend> cd src
-# PS C:\New folder\spark-tech\ecommarce-raphm18\ecommarce-backend\src> tree
-# Folder PATH listing
-# Volume serial number is 88E7-76FD
 # C:.
 # ├───app
 # │   ├───builder
@@ -109,7 +108,6 @@ npm run dev
 # │       └───emailcontext
 # └───public
 #     └───images
-# PS C:\New folder\spark-tech\ecommarce-raphm18\ecommarce-backend\src>
 
 
 
