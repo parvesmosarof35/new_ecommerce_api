@@ -1,179 +1,245 @@
-# E-commerce Backend API
+E-Commerce Backend API
 
-A robust and scalable TypeScript-based backend for e-commerce applications, built with Express.js and MongoDB.
-https://ecommarce-backend-dsoe.onrender.com/
-(live)
+A robust, scalable, and production-ready TypeScript-based backend API for modern e-commerce applications.
+Built with Express.js, MongoDB, and industry best practices to ensure security, performance, and maintainability.
 
+🌐 Live API: http://api.lunelwellness.com/
 
-https://drive.google.com/file/d/1fjpdimzKwtbRu8H7dI4WK5D0BchM3NLx/view?usp=sharing
+🦸‍♂️ Postman: https://drive.google.com/file/d/1TFe5hEn55Xo6e-o1uLba_K2UgSHndx_9/view?usp=sharing
 
+📊 ERD Diagram: https://drive.google.com/file/d/1fjpdimzKwtbRu8H7dI4WK5D0BchM3NLx/view?usp=sharing
 
-## 🚀 Features
+🚀 Features
+🔐 Authentication & Authorization
 
-- **User Authentication** - JWT-based authentication system
-- **Product Management** - CRUD operations for products
-- **Order Processing** - Complete order lifecycle management
-- **Payment Integration** - Secure payment processing
-- **Shopping Cart** - Persistent cart functionality
-- **Reviews & Ratings** - Product review system
-- **Blog System** - Content management for blogs
-- **FAQ Management** - Dynamic FAQ section
-- **Wishlists** - User wishlist functionality
-- **Contact System** - User inquiry management
+JWT-based authentication
 
-## 🛠 Tech Stack
+Role-based access control
 
-- **Runtime**: Node.js
-- **Framework**: Express.js
-- **Language**: TypeScript
-- **Database**: MongoDB with Mongoose
-- **Authentication**: JWT
-- **Payment**: Stripe Integration
-- **File Storage**: Cloudinary
-- **Email**: Nodemailer
-- **Validation**: Zod
-- **Scheduling**: Node-cron
-- **Real-time**: Socket.IO
+Secure password hashing
 
-## 📦 Prerequisites
+Protected routes middleware
 
-- Node.js (v14 or higher)
-- MongoDB (v4.4 or higher)
-- npm (v7 or higher) or yarn
+🛍 Product Management
 
-## 🚀 Installation
+Create, update, delete products
 
-1. Clone the repository:
+Product categories & collections
 
-   ```bash
-   git clone https://github.com/parvesmosarof35/ecommarce-backend.git
-   cd ecommarce-backend
-   ```
+Image upload with Cloudinary
 
-2. Install dependencies:
+Product search & filtering
 
-   ```bash
-   npm install
-   # or
-   yarn
-   ```
+🛒 Shopping Cart
 
-3. Create a `.env` file in the root directory and add your environment variables:
-   ```env
-   PORT=5000
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-   CLOUDINARY_API_KEY=your_cloudinary_api_key
-   CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-   STRIPE_SECRET_KEY=your_stripe_secret_key
-   ```
+Persistent cart per user
 
-## 🏃‍♂️ Running the Application
+Add / remove items
 
-### Development
+Update quantities
 
-```bash
+Auto price calculations
+
+📦 Order Management
+
+Complete order lifecycle
+
+Order status tracking
+
+Payment status handling
+
+Order history per user
+
+💳 Payment Integration
+
+Secure Stripe payment integration
+
+Payment verification
+
+Webhook-ready structure
+
+⭐ Reviews & Ratings
+
+Add product reviews
+
+Rating system
+
+User-specific review tracking
+
+❤️ Wishlist
+
+Save favorite products
+
+Manage wishlist items
+
+📝 Blog System
+
+Blog CRUD operations
+
+Admin-controlled publishing
+
+❓ FAQ Management
+
+Dynamic FAQ handling
+
+Admin-managed content
+
+📬 Contact System
+
+User inquiry submission
+
+Email notification system
+
+🔄 Real-Time Features
+
+Socket.IO integration ready
+
+Event-based architecture
+
+🛠 Tech Stack
+Category	Technology
+Runtime	Node.js
+Framework	Express.js
+Language	TypeScript
+Database	MongoDB + Mongoose
+Authentication	JWT
+Payment	Stripe
+File Storage	Cloudinary
+Email Service	Nodemailer
+Validation	Zod
+Scheduling	Node-cron
+Real-time	Socket.IO
+📦 Prerequisites
+
+Make sure you have the following installed:
+
+Node.js (v14 or higher)
+
+MongoDB (v4.4 or higher)
+
+npm (v7+) or yarn
+
+⚙️ Installation
+1️⃣ Clone the Repository
+git clone https://github.com/parvesmosarof35/ecommarce-backend.git
+cd ecommarce-backend
+
+2️⃣ Install Dependencies
+npm install
+# or
+yarn install
+
+3️⃣ Configure Environment Variables
+
+Create a .env file in the root directory and add:
+
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+STRIPE_SECRET_KEY=your_stripe_secret_key
+
+🏃 Running the Application
+🔧 Development Mode
 npm run dev
 
-
-
-
-
-# C:.
-# ├───app
-# │   ├───builder
-# │   ├───config
-# │   ├───errors
-# │   ├───helper
-# │   ├───interface
-# │   ├───middlewares
-# │   ├───modules
-# │   │   ├───auth
-# │   │   ├───blogs
-# │   │   ├───cart
-# │   │   ├───collections
-# │   │   ├───contact
-# │   │   ├───faq
-# │   │   ├───order
-# │   │   ├───payment
-# │   │   ├───products
-# │   │   ├───reviews
-# │   │   ├───settings
-# │   │   ├───user
-# │   │   └───wishlists
-# │   ├───routes
-# │   ├───shared
-# │   └───utils
-# │       └───emailcontext
-# └───public
-#     └───images
-
-
-
-
-```
-
-### Production
-
-```bash
+🚀 Production Mode
 npm run build
 npm start
-```
 
-## 🧪 Running Tests
-
-```bash
+🧪 Running Tests
 npm test
-```
 
-## 🧹 Code Quality
-
-### Linting
-
-```bash
+🧹 Code Quality
+Linting
 npm run lint
-```
 
-### Formatting
-
-```bash
+Formatting
 npm run prettier
-```
 
-## 📂 Project Structure
-
-```
+📂 Project Structure
 src/
 ├── app/
 │   ├── config/         # Configuration files
-│   ├── errors/         # Custom error classes
+│   ├── errors/         # Custom error handlers
 │   ├── helper/         # Helper functions
 │   ├── interface/      # TypeScript interfaces
 │   ├── middlewares/    # Express middlewares
-│   ├── modules/        # Feature modules
-│   │   ├── auth/       # Authentication
-│   │   ├── products/   # Product management
-│   │   ├── order/      # Order processing
-│   │   └── ...         # Other modules
-│   ├── routes/         # Route definitions
+│   ├── modules/        # Feature-based modules
+│   │   ├── auth/
+│   │   ├── cart/
+│   │   ├── collections/
+│   │   ├── order/
+│   │   ├── payment/
+│   │   ├── products/
+│   │   ├── reviews/
+│   │   ├── user/
+│   │   └── wishlists/
+│   ├── routes/         # API route definitions
+│   ├── shared/         # Shared utilities
 │   └── utils/          # Utility functions
-└── server.ts           # Application entry point
-```
+│       └── emailcontext/
+└── server.ts           # Entry point
 
-## 🤝 Contributing
+🔐 Security Best Practices
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Environment-based configuration
 
-## 📄 License
+Secure JWT handling
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Input validation with Zod
 
-## 👏 Acknowledgments
+Centralized error handling
 
-- Built with ❤️ using TypeScript and Express
-- Special thanks to all contributors
+Role-based authorization
+
+Secure payment processing
+
+📈 Scalability & Architecture
+
+Modular feature-based architecture
+
+Separation of concerns
+
+Service-controller pattern
+
+Middleware-driven request lifecycle
+
+Easily extendable for microservices migration
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository
+
+Create a feature branch
+
+git checkout -b feature/AmazingFeature
+
+
+Commit your changes
+
+git commit -m "Add AmazingFeature"
+
+
+Push to your branch
+
+git push origin feature/AmazingFeature
+
+
+Open a Pull Request
+
+📄 License
+
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
+
+👨‍💻 Author
+
+Parves Mosarof
+Built with ❤️ using TypeScript & Express.js
