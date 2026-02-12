@@ -161,29 +161,57 @@ npm run lint
 Formatting
 npm run prettier
 
+
+
 📂 Project Structure
 src/
+
 ├── app/
+
 │   ├── config/         # Configuration files
+
 │   ├── errors/         # Custom error handlers
+
 │   ├── helper/         # Helper functions
+
 │   ├── interface/      # TypeScript interfaces
+
 │   ├── middlewares/    # Express middlewares
+
 │   ├── modules/        # Feature-based modules
+
 │   │   ├── auth/
+
 │   │   ├── cart/
+
 │   │   ├── collections/
+
 │   │   ├── order/
+
 │   │   ├── payment/
+
 │   │   ├── products/
+
 │   │   ├── reviews/
+
 │   │   ├── user/
+
 │   │   └── wishlists/
+
 │   ├── routes/         # API route definitions
+
 │   ├── shared/         # Shared utilities
+
 │   └── utils/          # Utility functions
+
 │       └── emailcontext/
+
 └── server.ts           # Entry point
+
+
+
+
+
 
 🔐 Security Best Practices
 
